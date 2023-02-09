@@ -1,0 +1,19 @@
+body {
+    background-color: #3e3e3e;
+    font-family: Verdana;
+    color: #e6e6e6;
+    margin: 0;
+    font-size: 14px;
+  }
+  
+  h1, p {
+    text-align: center;
+    color: #bcbcbc;
+    font: Avant-Garde;
+    margin: 1em auto;
+  }
+  
+  label {
+    display: block;
+    margin: 0.5rem 0;
+  }

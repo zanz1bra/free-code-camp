@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <title>Survey Form</title>
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <h1 id="title">Survey Form</h1>
+    <p id="description">Thank you for participating in this survey!</p>
+    <form id="survey-form">
+      <fieldset>
+        <label for="name" id="name-label">Please enter your name: <input id="name" type="text" placeholder="Your name" required /> </label>
+        <label for="email" id="email-label">Please enter your email: <input id="email" type="email" placeholder="Your email" required /></label>
+        <label for="number" id="number-label">Please enter your age: <input id="number" type="number" min="15" max="120" placeholder="Your age" required></label>
+      </fieldset>
+      <fieldset>
+        <label for="dropdown" id="referrer">How did you hear about us?
+          <select id="dropdown">
+            <option value="">Select one</option>
+            <option value="1">Advertisement in local paper</option>
+            <option value="2">From friends or acquaintances</option>
+            <option value="3">I'm a regular here at Paddy's</option>
+          </select>
+        </label>
+      </fieldset>
+      <fieldset>
+        <label>If I get hired I will mostly do: </label>
+        <label for="working">
+          <input name="do" type="radio" id="working" class="inline" value="working">
+          Working
+        </label>
+        <label for="drinking">
+          <input name="do" type="radio" id="drinking" class="inline" value="drinking">
+          Drinking
+          </label>
+          <label for="charlie-work">
+            <input name="do" type="radio" id="charlie-work" class="inline" value="working">
+            Charlie work
+          </label>
+      </fieldset>
+      <fieldset>
+        <label>What would you like to see improved at Paddy's?</label>
+        <label for="clean">
+          <input value="clean" type="checkbox">
+          Cleanliness
+        </label>
+          <label for="ethics">
+          <input value="ethics" type="checkbox">
+          Work ethics
+        </label>
+          <label for="drinks">
+          <input value="drinks" type="checkbox">
+          Drink choices
+        </label>
+          <label for="hours">
+          <input value="hours" type="checkbox">
+          Open hours
+        </label>
+      </fieldset>
+      <fieldset>
+        <label for="comments">Do you have any comments?
+          <textarea id="comments" name="comments" rows="4" cols="40" placeholder="Write comments here..."></textarea>
+        </label>
+      </fieldset>
+      <input type="submit" value="Submit" id="submit"> 
+    </form>
+  </body>
+</html>
